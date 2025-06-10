@@ -30,10 +30,15 @@ ul{
     display:flex;
     justify-content:end;
     align-items:center;
+    height: 100%;
 }
 
 ul>li{
+    display: flex;
     padding:0 12px;
+    height: 100%;
+    align-items:center; 
+    cursor: pointer;
 }
 .container{
     max-width:1100px;
@@ -44,6 +49,10 @@ ul>li{
     background:#3474c6;
     color:#fff;
     height:60px;
+}
+
+ul>li:hover{
+    color: lightblue;
 }
 
 .logo{
