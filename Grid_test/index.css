@@ -16,9 +16,7 @@ body{
     padding: 40px;
     background-color: #fafafa;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /*column-gap: 10px;
-    row-gap:10px;*/
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
     Gap:10px;
 }
 

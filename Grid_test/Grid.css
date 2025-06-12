@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family: poppins, sans-serif;
+    font-size: 16px;
+    height:100vh;
+    display: grid;
+    grid-template-areas: 
+    'Header Header Header'
+    'nav container sidebar'
+    'nav footer footer'
+    ; /* These names can be anything also this names are case sensitive*/
+
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 80px 1fr 70px;
+}
+
+header,footer,main,aside,nav{
+    background: #1b1ea4;
+    padding: 20px;
+    border: #2e30d0 1px solid;
+    color: #ffffff;
+}
+
+header{
+    grid-area:Header; /* Header value is based on what wwe have give on Grid-template-area */
+}
+
+nav{
+grid-area:nav;
+}
+
+main{
+    grid-area:container;
+}
+
+aside{
+    grid-area:sidebar;
+}
+
+footer{
+    grid-area:footer;
+}
